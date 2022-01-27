@@ -47,3 +47,12 @@ btnDescripto.addEventListener("click", function(event) {
     let textoFinal = document.querySelector("#msg");
     textoFinal.value = textoCripto;
 })
+/* Extra - Botão para copiar
+Vamos deixar um link para a documentação do MDN sobre como copiar, recortar e colar dados para a área de transferência usando JavaScript. Está em inglês, mas você pode usar o recurso do navegador para traduzir a página.
+link: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard
+*/
+let btnCopy = document.querySelector("#btn-copy");
+btnCopy.addEventListener("click", function(event) {
+    event.preventDefault();
+    console.log("clickCopy");
+})
