@@ -8,7 +8,11 @@
 Apenas letras minúsculas
 Não permite acentuação   
 */
-
+let btnCripto = document.querySelector("#btn-cripto");
+btnCripto.addEventListener("click", function(event) {
+    event.preventDefault();
+    console.log("click");
+})
 /* Regras Decodificador: 
 "enter" é convertido para "e" 
 "imes" é convertido para "i"
