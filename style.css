@@ -9,7 +9,8 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.main {
+.main, 
+footer {
   width: 80vw;
   margin: auto;
   display: flex;
