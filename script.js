@@ -11,7 +11,7 @@ Não permite acentuação
 let btnCripto = document.querySelector("#btn-cripto");
 btnCripto.addEventListener("click", function(event) {
     event.preventDefault();
-    console.log("click");
+    console.log("clickCripto");
 
     let inputTexto = document.querySelector("#input-texto").value;
     let textoCripto = inputTexto.replace(/a/g, "ai")
@@ -32,3 +32,8 @@ btnCripto.addEventListener("click", function(event) {
 Apenas letras minúsculas
 Não permite acentuação     
 */
+let btnDescripto = document.querySelector("#btn-descripto");
+btnDescripto.addEventListener("click", function(event) {
+    event.preventDefault();
+    console.log("clickDescripto");
+})
