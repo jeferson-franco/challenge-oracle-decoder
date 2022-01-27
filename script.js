@@ -36,4 +36,14 @@ let btnDescripto = document.querySelector("#btn-descripto");
 btnDescripto.addEventListener("click", function(event) {
     event.preventDefault();
     console.log("clickDescripto");
+
+    let inputTexto = document.querySelector("#input-texto").value;
+    let textoCripto = inputTexto.replace(/ai/g, "a")
+        .replace(/enter/g, "e")
+        .replace(/imes/g, "i")
+        .replace(/ober/g, "o")
+        .replace(/ufat/g, "u");
+
+    let textoFinal = document.querySelector("#msg");
+    textoFinal.value = textoCripto;
 })
