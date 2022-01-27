@@ -15,6 +15,12 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 .main, 
 footer {
   width: 80vw;
