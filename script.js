@@ -37,9 +37,9 @@ btnCripto.addEventListener("click", function(event) {
     console.log("clickCripto");
 
     let inputTexto = document.querySelector("#input-texto").value;
-    let textoCripto = inputTexto.replace(/a/g, "ai")
-        .replace(/e/g, "enter")
+    let textoCripto = inputTexto.replace(/e/g, "enter")
         .replace(/i/g, "imes")
+        .replace(/a/g, "ai")
         .replace(/o/g, "ober")
         .replace(/u/g, "ufat");
 
@@ -61,9 +61,9 @@ btnDescripto.addEventListener("click", function(event) {
     console.log("clickDescripto");
 
     let inputTexto = document.querySelector("#input-texto").value;
-    let textoCripto = inputTexto.replace(/ai/g, "a")
-        .replace(/enter/g, "e")
+    let textoCripto = inputTexto.replace(/enter/g, "e")
         .replace(/imes/g, "i")
+        .replace(/ai/g, "a")
         .replace(/ober/g, "o")
         .replace(/ufat/g, "u");
 
