@@ -55,4 +55,10 @@ let btnCopy = document.querySelector("#btn-copy");
 btnCopy.addEventListener("click", function(event) {
     event.preventDefault();
     console.log("clickCopy");
+
+    let inputTexto = document.querySelector("#msg");
+    inputTexto.select();
+    inputTexto.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(inputTexto.value);
+    inputTexto.value="";
 })
