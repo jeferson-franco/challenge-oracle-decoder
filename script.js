@@ -5,12 +5,23 @@
 - Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.
 link: https://www.horadecodar.com.br/2020/12/04/bloquear-caracteres-especiais-em-input-com-javascript/
 */
-const inputTexto = document.querySelector(".text-input");
+const inputTexto = document.querySelector(".main");
 inputTexto.addEventListener("keypress", function(event) {
-    event.preventDefault();
-    console.log("keypress");
-})
+    checkChar(event);
 
+    if (!checkChar(event)) {
+        event.preventDefault();
+    }
+})
+function checkChar(event) {
+    const char = String.fromCharCode(event.keyCode);
+    console.log(char);
+    const pattern = "[a-z ]";
+
+    if (char.match(pattern)) {
+        return true;
+    }
+}
 /* Regras Codificador: 
 "e" é convertido para "enter" 
 "i" é convertido para "imes"
