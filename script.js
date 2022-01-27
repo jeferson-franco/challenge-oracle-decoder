@@ -1,3 +1,15 @@
+/* Como bloquear caracteres especiais:
+**Requisitos:**
+- Deve funcionar apenas com letras minúsculas
+- Não devem ser utilizados letras com acentos nem caracteres especiais
+- Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.
+link: https://www.horadecodar.com.br/2020/12/04/bloquear-caracteres-especiais-em-input-com-javascript/
+*/
+const inputTexto = document.querySelector(".text-input");
+inputTexto.addEventListener("keypress", function(event) {
+    event.preventDefault();
+    console.log("keypress");
+})
 
 /* Regras Codificador: 
 "e" é convertido para "enter" 
