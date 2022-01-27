@@ -84,4 +84,6 @@ btnCopy.addEventListener("click", function(event) {
     inputTexto.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(inputTexto.value);
     inputTexto.value="";
+    document.querySelector("#input-texto").value = "";
+    alert("texto copiado com sucesso!");
 })
